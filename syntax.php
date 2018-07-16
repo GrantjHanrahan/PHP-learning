@@ -112,5 +112,23 @@ foreach ($colors as $value) {
 }
 ?>
 
+<?php
+// First method to create associative array
+$salaries = array("bo" => 2000, "mo" => 1500, "zo" => 3300);
+
+echo "Salary of bo is ". $salaries["bo"] ."<br />";
+echo "Salary of mo is ". $salaries["mo"] ."<br />";
+echo "Salary of zo is ". $salaries["zo"] ."<br />";
+
+// second method to create array
+$salaries["bo"] = "high";
+$salaries["mo"] = "medium";
+$salaries["zo"] = "low";
+
+echo "Salary of bo is ". $salaries["bo"] . "<br />";
+echo "Salary of mo is ". $salaries["mo"] . "<br />";
+echo "Salary of zo is ". $salaries["zo"] . "<br />";
+?>
+
 </body>
 </html>
